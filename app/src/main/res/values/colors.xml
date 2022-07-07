@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="Primary_Color">#0CBC5F</color>
+    <color name="purple_500">#469E6F</color>
+    <color name="purple_700">#3BB876</color>
+    <color name="teal_200">#469E6F</color>
+    <color name="teal_700">#E4E6E5</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="Button_color">#469E6F</color>
+</resources>

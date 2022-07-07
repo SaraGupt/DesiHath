@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:padding="10dp"
+    android:layout_margin="10dp"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+    <TextView
+        android:id="@+id/Fname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Hey"
+        android:textSize="15dp"
+        android:textStyle="normal"
+        android:padding="15dp"
+        android:layout_margin="15dp">
+
+    </TextView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Please Select TO Location"
+        android:padding="10dp"
+        android:layout_margin="10dp"
+        android:textSize="15dp"
+        android:textStyle="normal"
+        android:textColor="@color/Primary_Color"
+        >
+    </TextView>
+
+    <LinearLayout
+        android:id="@+id/layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10sp"
+        android:layout_marginRight="10sp"
+        android:background="#CED1D0">
+        <fragment
+            android:id="@+id/Fautocomplete_fragment1"
+            android:layout_width="match_parent"
+           android:name="com.google.android.libraries.places.widget.AutocompleteSupportFragment"
+            android:layout_height="match_parent"/>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Please Select FROM Location"
+        android:padding="5dp"
+        android:textColor="@color/Primary_Color"
+        android:textSize="15dp"
+        android:textStyle="normal"
+        android:layout_margin="5dp">
+    </TextView>
+ <LinearLayout
+        android:id="@+id/layout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10sp"
+        android:layout_marginRight="10sp"
+        android:background="#CED1D0">
+        <fragment
+            android:id="@+id/Fautocomplete_fragment2"
+            android:name="com.google.android.libraries.places.widget.AutocompleteSupportFragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:layout_margin="5dp"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Date: "
+            android:textColor="@color/Primary_Color"
+            android:padding="5dp"
+            android:textSize="15dp"
+            android:textStyle="normal"
+            android:layout_margin="5dp" />
+
+        <EditText
+            android:id="@+id/Fshow_selected_date"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:textStyle="normal"
+            android:layout_margin="15dp"/>
+        <!--button to open the material design date picker dialog-->
+
+        <ImageView
+            android:id="@+id/Fpick_date_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:maxHeight="30dp"
+            android:maxWidth="30dp"
+            android:layout_marginLeft="20dp"
+           android:src="@drawable/calendar" />
+    </LinearLayout>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Description "
+        android:padding="5dp"
+        android:textSize="15dp"
+        android:textColor="@color/Primary_Color"
+        android:textStyle="normal"
+        android:layout_margin="5dp"/>
+    <EditText
+        android:id="@+id/Fedt_desc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:textSize="15dp"
+        android:textStyle="normal"
+        android:layout_margin="10dp"/>
+    <Button
+        android:id="@+id/Fbtn_submit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="SUBMIT"
+        android:layout_marginTop="50dp"
+        android:textSize="18sp"/>
+</LinearLayout>

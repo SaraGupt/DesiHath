@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">DesiHand</string>
+    <string name="api_key">AIzaSyBmHatshnxN87eauPa_D2Z_chGwUlMnteg</string>
+    <string name="Fragment_1">Request Item</string>
+    <string name="Fragment_2">Help Out</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_Firest_fragment">Hello blank fragment</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>
