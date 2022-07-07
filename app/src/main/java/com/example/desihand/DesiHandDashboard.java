@@ -20,7 +20,7 @@ import com.google.firebase.database.ValueEventListener;
 
 public class DesiHandDashboard extends Fragment {
     View view;
-    TextView txt_secondly,txt_third;
+    TextView txt_secondly,txt_thirds;
     DatabaseReference databaseReference;
     com.google.firebase.auth.FirebaseUser FirebaseUser;
     String FirebaseUserid,name, y=null;
@@ -32,7 +32,7 @@ public class DesiHandDashboard extends Fragment {
         // Inflate the layout for this fragment
         view = inflater.inflate(R.layout.fragment_desi_hand_dashboard, container, false);
         txt_secondly = view.findViewById(R.id.second_label);
-        txt_third = view.findViewById(R.id.third_label);
+        txt_thirds = view.findViewById(R.id.third_label);
 
         //Get Name from Data base
         FirebaseUser = FirebaseAuth.getInstance().getCurrentUser();
